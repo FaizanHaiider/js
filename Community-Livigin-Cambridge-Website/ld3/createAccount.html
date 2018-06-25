@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/createAccount.css">
+		<link rel="stylesheet" type="text/css" href="css/sysMessages.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<!-- Custom styles for this template -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>    
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+	</head>
+
+	<body>
+		<a href="loginPage.html"><img src="imgs/Uplift-02.png" class="img-fluid"></a>
+		<a href="loginPage.html"><img src="imgs/logo.png" class="img-fluid"></a>
+
+		<div class="container">
+			<p id="sysMsgPlaceholder"></p>
+			<h1>Create an Account</h1>
+			<p class="instr">All text fields must be filled in order to create an account</p>
+			<hr>
+			<form action = "#" method = "post">
+
+				<div class="input-group input-group-lg">
+					<span class="input-group-addon login-addon createAccount-input" id="email">Email:</span>
+	       			<input type="email" class="form-control" placeholder="Enter email...">
+	       		</div>
+	       		<br>
+
+	       		<div class="input-group input-group-lg">
+	       			<span class="input-group-addon login-addon createAccount-input" id="username">Username:</span>
+	       			<input type="username" class="form-control" placeholder="Enter username...">
+				</div>
+				<br>
+
+				<div class="input-group input-group-lg">
+	       			<span class="input-group-addon login-addon createAccount-input" id="password">Password:</span>
+	       			<input type="password" class="form-control" placeholder="Enter password...">
+				</div>
+				<br>
+
+				<div class="input-group input-group-lg">
+	       			<span class="input-group-addon login-addon createAccount-input" id="verifyPass">Repeat Password:</span>
+	       			<input type="password" class="form-control" placeholder="Repeat password...">
+				</div>
+
+				<label class="radio-inline"><input type="radio" id="male" name="optradio">Male</label>
+				<label class="radio-inline"><input type="radio" id="female" name="optradio">Female</label>
+				<label class="radio-inline"><input type="radio" id="other" name="optradio">Other</label> 
+
+				<br>
+			</form>
+			<a href="#" class="btn btn-primary btn-lg-round btn-lg submitBtn" role="button">Create Account</a>
+		</div>
+
+	</body>
+</html>

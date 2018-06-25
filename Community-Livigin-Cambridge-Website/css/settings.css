@@ -1,0 +1,36 @@
+html, body {
+	height: 100%;
+	text-align: center;
+}
+
+body {
+	background: #91a4b5;
+}
+
+body > div {
+	margin-bottom: 100px;
+}
+
+.container {
+	background: linear-gradient(#91a4b5, #f7f7f7);
+}
+
+.container .settingsOptions a {
+	border-radius: 17px;
+	padding: 10px 15px; 
+}
+
+.container .collapse {
+	margin: 20px 20px;
+}
+
+.container .collapse span {
+	border-top-left-radius: 17px;
+	border-bottom-left-radius: 17px;
+	background-color: lightgray;
+	color: gray;
+}
+
+.container a {
+	margin: 10px 0px;
+}

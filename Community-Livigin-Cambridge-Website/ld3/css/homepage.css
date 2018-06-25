@@ -1,0 +1,52 @@
+html, body {
+	text-align: center;
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(#efefbb, #d4d3dd);
+}
+
+.jumbotron {
+	background: url("../imgs/mountains-forest.jpg") no-repeat center fixed;
+	height: 100%;
+	background-size: cover;
+	margin-bottom: 0px;
+	padding: 0px;
+}
+
+.jumbotron .container {
+	position: relative;
+	top: 30%;
+	z-index: 4;
+	text-align: center;
+}
+
+.jumbotron .scrollDown {
+	display: block;
+    position: absolute;
+    bottom: 20px;
+    right: 50%;
+    text-align: center;
+    z-index: 6;
+}
+
+.jumbotron .scrollDown a {
+	font-size: 20pt;
+	background-color: transparent;
+	border-color: white;
+	color: white;
+	border-radius: 18px;
+}
+
+.lead a {
+  color: white;
+}
+
+th {
+	font-size: 16pt;
+}
+
+td {
+	font-size: 14pt;
+}

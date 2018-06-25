@@ -1,0 +1,53 @@
+p#sysMsgPlaceholder.createAccSuccess:after {
+	content: "Created your account succesfully!";
+	color: green;
+	font-size: 20px;
+}
+
+p#sysMsgPlaceholder.createAccFailure:after {
+	content: "Error occured while creating your account.";
+	color: red;
+	font-size: 20px;
+}
+
+p#sysMsgPlaceholder.changeNameSuccess:after {
+	content: "Your username has been changed succesfully!";
+	color: green;
+	font-size: 20px;
+}
+
+p#sysMsgPlaceholder.changeNameFailure:after {
+	content: "Error occured while changing your username.";
+	color: red;
+	font-size: 20px;
+}
+
+p#sysMsgPlaceholder.changePassSuccess:after {
+	content: "Your password has been succesfully changed!";
+	color: green;
+	font-size: 20px;
+}
+
+p#sysMsgPlaceholder.changePassFailure:after {
+	content: "Error occured while changing your password.";
+	color: red;
+	font-size: 20px;
+}
+
+p#sysMsgPlaceholder.loginFailure.invalidCred:after {
+	content: "Invalid login credentials.";
+	color: red;
+	font-size: 20px;
+}
+
+p#sysMsgPlaceholder.dupUsername:after {
+	content: "Username already exists.";
+	color: red;
+	font-size: 20px;
+}
+
+p#sysMsgPlaceholder.missingFields:after {
+	content: "One or more text fields missing. Fill all text fields.";
+	color: red;
+	font-size: 20px;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">	
+		<meta charset="utf-8">
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css"> 
+		<link rel="stylesheet" type="text/css" href="css/homepage.css">
+		<link rel="stylesheet" type="text/css" href="css/sysMessages.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<!-- Custom styles for this template -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+
+		<script type="text/javascript" src="js/scroll.js"></script> 
+		<script type="text/javascript" src="js/w3.js"></script> 
+
+	</head>
+
+	<body>
+		<div w3-include-html="navbar.html"></div>
+
+		<div class="jumbotron">
+    		<div class="container">
+      			<h1> Hello, USERNAME</h1>
+      			<p class="lead"> You have <a href="#tables">N</a> new message(s)</p>
+      			<p class="lead"> You have <a href="#tables">N</a> event(s) today</p>
+    		</div>
+    		<div class="scrollDown">
+        		<a href="#tables" class="btn btn-round"> 🡳 </a>
+    		</div>
+		</div>
+
+		<div id="tables">
+		  <div class="container">
+		    <div class="row">
+		      <div class="col-md-12">
+		        <h3>Scheduled Events</h3>
+		        <hr>
+				    <table class="table table-condensed table-bordered">
+		          <thead class="table-head">
+		            <tr>
+		              <th>Event</th>
+		              <th>Time</th>
+		              <th>Complete</th>    
+		            </tr>
+		          </thead>
+				  
+		          <tbody class="table-body">
+		            <tr>
+		              <th scope="row">Medication One</th>
+		              <td>Today at 10:00am</td>
+		              <td><button type="button" class="btn btn-Med btn-round navbar-btn">Mark Complete</button></td>
+		            </tr>
+		            <tr>
+		              <th scope="row">Medication Two</th>
+		              <td>Today at 12:30pm</td>
+		              <td><button type="button" class="btn btn-Med btn-round navbar-btn">Mark Complete</button></td> 
+		            </tr>
+		            <tr>
+		              <th scope="row">Medication Three</th>
+		              <td>Today at 4:00pm</td>
+		              <td><button type="button" class="btn btn-Med btn-round navbar-btn">Mark Complete</button></td>
+		            </tr>
+		            <tr>
+		              <th scope="row" >Medication Four</th>
+		              <td>Today at 6:00pm</td>
+		              <td><button type="button" class="btn btn-Med btn-round navbar-btn">Mark Complete</button></td>
+		            </tr>
+		          </tbody>
+		        </table>   
+		       </div>
+		    </div>
+		  </div>
+		</div>
+
+
+
+		<script>
+			w3.includeHTML();
+		</script>
+	</body>
+
+
+</html>

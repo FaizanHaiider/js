@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		    
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="css/global.css"> 
+		<link rel="stylesheet" type="text/css" href="css/settings.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css"> 
+		<link rel="stylesheet" type="text/css" href="css/sysMessages.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+		
+		<!-- Custom styles for this template -->
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script> 
+
+		<script type="text/javascript" src="js/scroll.js"></script> 
+		<script type="text/javascript" src="js/w3.js"></script>  
+		    
+	</head>
+
+	<body>
+		
+		<!-- nav bar -->
+		<div w3-include-html="navbar.html"></div>
+
+		
+		<div class="container">
+			<p id="sysMsgPlaceholder"></p>
+			<h1>Profile</h1>
+			<hr>
+
+			<div class="card">
+				<img class="card-img-bottom img-circle" src="imgs/hacker.jpg" alt="Card image">
+				<div class="card-body">
+			    	<h4 class="card-title">USERNAME</h4>
+			    	<p class="card-text"><b>email:</b><span id="userEmail"> EMAIL</span></p>
+			    	<p class="card-text"><b>gender:</b><span id="userGender"> GENDER</span></p>
+			    </div>
+			</div>
+
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#changeName">Change Username</button>
+
+			<!-- change username modal -->
+			<div class="modal fade" id="changeName">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<!-- modal header -->
+						<div class="modal-header">
+							<h3>Change Username</h3>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<!-- modal body -->
+						<div class="modal-body">
+							<h4>Enter new username</h4>
+							<form action = "#" method = "post">
+								<div class="input-group input-group-lg">
+									<span class="input-group-addon">Username:</span>
+									<input type="username" class="form-control" placeholder="Enter username..." id="username">
+								</div>
+								<br>
+								<button type="submit" class="btn btn-primary btn-lg">Save</button>
+								<br>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>		
+
+
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#changePass">Change Password</button>
+
+			<!-- change username modal -->
+			<div class="modal fade" id="changePass">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<!-- modal header -->
+						<div class="modal-header">
+							<h3>Change Password</h3>
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+						</div>
+						<!-- modal body -->
+						<div class="modal-body">
+							<h4>Enter new password</h4>
+							<form action = "#" method = "post">
+								<div class="input-group input-group-lg">
+									<span class="input-group-addon">Password:</span>
+									<input type="password" class="form-control" placeholder="Enter password..." id="password">
+								</div>
+								<div class="input-group input-group-lg">
+									<span class="input-group-addon">Repeat Password:</span>
+									<input type="password" class="form-control" placeholder="Repeat password..." id="rpass">
+								</div>
+								<br>
+								<button type="submit" class="btn btn-primary btn-lg">Save</button>
+								<br>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>		
+
+
+
+		</div>
+
+	<script>
+		w3.includeHTML();
+	</script>
+
+	</body>
+</html>

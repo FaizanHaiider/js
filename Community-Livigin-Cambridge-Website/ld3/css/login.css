@@ -1,0 +1,42 @@
+html, body {
+	text-align: center;
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(#efefbb, #d4d3dd);
+}
+
+body a img {
+	width: 200px;
+	height: 200px;
+}
+
+h1 {
+	color: #0275d8;
+	font-size: 50px;
+}
+
+p.instr {
+	font-size: 18px;
+}
+
+.container .input-group .login-input-fields {
+	border-top-left-radius: 17px;
+	border-bottom-left-radius: 17px;
+	max-width: 800px;
+}
+
+.container .login-btn {
+	padding-left: 40px;
+	padding-right: 40px;
+	font-size: 20px;
+	border-radius: 17px;
+}
+
+.container a {
+	margin: 10px 10px;
+	border-radius: 17px;
+	padding: 10px 28px;
+	font-size: 18px;
+}

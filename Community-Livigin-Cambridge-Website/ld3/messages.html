@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+   <meta name="viewport" content="width=device-width, initial-scale=1">	
+		<meta charset="utf-8">
+
+		<!-- Bootstrap core CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+		<link rel="stylesheet" type="text/css" href="css/global.css">
+		<link rel="stylesheet" type="text/css" href="css/navbar.css"> 
+		<link rel="stylesheet" type="text/css" href="css/messages.css"> 
+		<link rel="stylesheet" type="text/css" href="css/sysMessages.css">
+		<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+		<!-- Custom styles for this template -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script> 
+
+		<script type="text/javascript" src="js/scroll.js"></script> 
+		<script type="text/javascript" src="js/w3.js"></script> 
+</head>
+<body>
+    
+ 
+<!-- HEADER BAR -->
+	<div w3-include-html="navbar.html"></div>
+
+	<div class="container">
+		<h1>Messages</h1>
+		<hr>
+			<div class="panel panel-primary messenger-border">
+				<div class="panel-heading panel-relative userList-body">
+					<button class="btn btn-round btn-Med btn-right">Cancel</button>
+					<h4 id="contactName">CONTACT NAME</h4>
+				</div>
+
+				<div class="panel=body message-list">
+					<ul class="list-group" id="messageList">
+						<li class="list-group-item userList-body received-message pull-left">Hello</li>
+					</ul>
+				</div>
+
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Enter a new message" aria-describedby="basic-addon2" id="messageInput">
+					<span class="input-group-btn">
+						<button class='btn btn-round btn-Med btn-right' onclick="newMessage()">Send</button>
+					</span>
+			</div>
+
+			</div>
+
+
+	</div>
+
+      
+	<script>
+		w3.includeHTML();
+		function newMessage() {
+			var newItem = document.createElement("li");
+			var myText = document.getElementById("messageInput").value;
+			if (myText != "" && myText != " ") {
+				var textItem = document.createTextNode(myText);
+				newItem.appendChild(textItem);
+				newItem.className="list-group-item userList-body sent-message pull-right";
+				
+				var list = document.getElementById("messageList");
+				list.appendChild(newItem);
+				
+				document.getElementById("messageInput").value = "";
+			}
+		}
+  </script>
+  
+</div>
+</body>
+</html>
